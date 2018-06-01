@@ -9,6 +9,7 @@ gatsby new gatsby-site https://github.com/timojaask/gatsby-starter-landing-page
 ## What's included
 
 - [Google Analytics](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-analytics)
+- [Google Fonts](https://github.com/didierfranc/gatsby-plugin-google-fonts)
 
 ## Required setup
 
@@ -19,7 +20,7 @@ gatsby new gatsby-site https://github.com/timojaask/gatsby-starter-landing-page
 gatsby develop
 ```
 
-## Google Analytics notes
+## Google Analytics
 
 Configure in `gatsby-config.js`.
 
@@ -33,3 +34,27 @@ const MyComponentWithALink = () =>
     Link to Google!
   </OutboundLink>
 ```
+
+## Google Fonts
+
+Add fonts you want to use in `gatsby-config.js`:
+```javascript
+{
+  resolve: `gatsby-plugin-google-fonts`,
+  options: {
+    fonts: [
+      // INSERT THE FONTS YOU WANT TO USE
+      `lato\:400,700`
+    ]
+  }
+},
+```
+
+Then use them in CSS:
+```css
+body {
+  font-family: 'Lato';
+}
+```
+
+See available fonts at [Google Fonts website](https://fonts.google.com).
