@@ -58,3 +58,24 @@ body {
 ```
 
 See available fonts at [Google Fonts website](https://fonts.google.com).
+
+## Using images
+
+Place an image somewhere inside the `src` folder. Then, use a relative path to access it:
+
+In JS:
+```javascript
+import logo from "./logo.png";
+
+const MyComponentWithAnImage = () => 
+  <div>
+    <img src={logo} alt="Logo" />
+  </div>
+```
+
+In CSS:
+```css
+.container {
+  background-image: url(./logo.png);
+}
+```
