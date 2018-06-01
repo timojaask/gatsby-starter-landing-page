@@ -14,6 +14,8 @@ gatsby new gatsby-site https://github.com/timojaask/gatsby-starter-landing-page
 ## Required setup
 
 - Insert your Google Analytics tracking ID in `gatsby-config.js`
+- Choose which Google fonts you want to include in `gatsby-config.js`
+- Add an OG image and setup meta tags in `html.js`
 
 ## Running in development
 ```
@@ -78,4 +80,18 @@ In CSS:
 .container {
   background-image: url(./logo.png);
 }
+```
+
+## Meta tags
+
+Adjust your meta tags in `html.js`. Make sure to configure the following lines:
+
+```javascript
+import ogImage from "./og-image.png";
+
+const metaTitle = "Site title"
+const metaDescription = "About this website"
+const metaUrl = "https://www.siteurl.com"
+const metaOgImage = `${metaUrl}${ogImage}`
+const metaOgType = "website"
 ```
