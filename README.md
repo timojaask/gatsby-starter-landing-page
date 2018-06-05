@@ -32,7 +32,7 @@ To track links that take user away from your site, use `OutboundLink` component.
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const MyComponentWithALink = () => 
-  <OutboundLink href="https://www.google.com">
+  <OutboundLink href="https://www.google.com" target="_blank">
     Link to Google!
   </OutboundLink>
 ```
